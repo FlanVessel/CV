@@ -24,8 +24,19 @@
     }
 
     .hero {
-      text-align: center;
-      padding: 40px 0;
+      display: flex;
+      justify-content: center;
+      padding: 50px 20px;
+    }
+
+    .hero-card {
+      display: flex;
+      align-items: center;
+      background: #1e293b;
+      border-radius: 15px;
+      overflow: hidden;
+      max-width: 800px;
+      width: 100%;
     }
 
     .section {
@@ -53,18 +64,46 @@
       color: #38bdf8;
       text-decoration: none;
     }
+
+    .divider {
+      width: 2px;
+      background: #38bdf8;
+      height: 80%;
+    }
+
+    .foto {
+      width: 200px;
+      height: 200px;
+    }
+
   </style>
 </head>
 <body>
     <div class="container">
 
-  <!-- HERO -->
+  <!-- ENCABEZADO -->
   <div class="hero">
-    <h1>Tu Nombre</h1>
-    <p>Game Developer (Unity - C#)</p>
-    <p>
-      Desarrollo sistemas de gameplay y UI optimizados para experiencias móviles.
-    </p>
+    <div class="hero-card">
+      <div class="left">
+        <div class="container">
+          <img class="foto" src="./img/Sin título-1.png" alt="Tu foto">
+        </div>
+      </div>
+
+    <div class="divider"></div>
+
+      <div class="right">
+        <div class="container">
+          <h1>Francisco Javier González Hernández</h1>
+          <p class="role">Game Developer (Unity - C#)</p>
+
+          <p>
+          
+          </p>
+
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- PROYECTOS -->
@@ -72,31 +111,16 @@
     <h2>🎮 Proyectos</h2>
 
     <div class="card">
-      <h3>Juego móvil en Unity</h3>
+      <h3>Juegos en Unity</h3>
       <p>
-        Desarrollo de un prototipo de juego móvil enfocado en interacción táctil.
+        Desarrollo prototipos para Pc y Ambiente Mobile.
       </p>
 
-      <p><strong>Lo que hice:</strong></p>
+      <p><strong>Lo que he hecho:</strong></p>
       <ul>
-        <li>Implementé sistema de interacción usando Input System</li>
-        <li>Adapté UI a múltiples resoluciones</li>
-        <li>Optimicé rendimiento en escenas</li>
+        <li>Adapté UI especificamente Mobile</li>
+        <li>Desarrolle un sistema de pulso de salto</li>
       </ul>
-
-      <p><strong>Tecnologías:</strong></p>
-      <span class="tag">
-        <div class="col-12 col-md-6">
-          Unity
-        </div>
-      </span>
-      <span class="tag">C#</span>
-      <span class="tag">Mobile</span>
-
-      <p>
-        <a href="#">Ver proyecto</a> |
-        <a href="#">GitHub</a>
-      </p>
     </div>
 
   </div>
@@ -107,7 +131,6 @@
 
     <span class="tag">Unity</span>
     <span class="tag">C#</span>
-    <span class="tag">Input System</span>
     <span class="tag">UI</span>
     <span class="tag">Git</span>
 
@@ -118,14 +141,13 @@
     <h2>🧠 Sobre mí</h2>
     <p>
       Desarrollador enfocado en sistemas de gameplay y resolución de problemas técnicos.
-      Interesado en crear experiencias fluidas y optimizadas en dispositivos móviles.
     </p>
   </div>
 
   <!-- CONTACTO -->
   <div class="section">
     <h2>📩 Contacto</h2>
-    <p>Email: tuemail@email.com</p>
+    <p>Email: vasijaflan275@gmail.com</p>
     <p>
       <a href="#">GitHub</a>
     </p>
