@@ -42,7 +42,7 @@ body {
 }
 
 
-.btn-tienda {
+.btn-cv {
   background-color: #ffffff;
   color: #000000;
   border: 2px solid #ffffff;
@@ -55,7 +55,7 @@ body {
 }
 
 
-.btn-tienda:hover {
+.btn-cv:hover {
   background-color: transparent;
   color: #ffffff;
   border-color: #ffffff;
@@ -63,11 +63,51 @@ body {
 
 
 .seccion-cv {
-  min-height: 400px;
   padding: 80px 0;
   border-bottom: 1px solid #dddddd;
 }
 
+.logo-wild {
+  height: 32px;
+  width: auto;
+  transition: 0.3s;
+}
+
+.contenedor-separador {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.linea-vertical-navbar {
+  width: 2px;
+  height: 40px;
+  background-color: white;
+}
+
+.linea-vertical {
+  width: 2px;
+  height: 40px;
+  background-color: #000000;
+}
+
+.seccion-lapiz {
+  border: 28px solid transparent;
+
+  border-image-source:
+      url("../img/CuadroSketch.png");
+
+  border-image-slice: 150;
+
+  border-image-repeat: stretch;
+
+  padding: 35px;
+
+  width: min(1100px, 90%);
+  margin: 60px auto;
+
+  box-sizing: border-box;
+}
 
 @media (max-width: 991px) {
   .cv-navbar .nav-link {
@@ -75,7 +115,7 @@ body {
     padding: 10px 0;
   }
 
-  .btn-tienda {
+  .btn-cv {
     display: inline-block;
     margin-top: 12px;
     margin-bottom: 8px;
