@@ -109,6 +109,75 @@ body {
   box-sizing: border-box;
 }
 
+.seccion-lapiz-chico {
+  border: 20px solid transparent;
+
+  border-image-source:
+      url("../img/Linea.png");
+
+  border-image-slice: 80;
+
+  border-image-repeat: stretch;
+
+  width: 100%;
+  min-width: 0;
+
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.texto {
+  max-width: 850px;
+  margin-bottom: 35px;
+  line-height: 1.7;
+}
+
+.sobre-mi-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.bloque-habilidades {
+  padding: 25px;
+}
+
+.bloque-habilidades h3 {
+  margin-bottom: 20px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill {
+  display: inline-block;
+
+  padding: 8px 16px;
+
+  border: 2px solid #212529;
+  border-radius: 20px;
+
+  background-color: transparent;
+  color: #212529;
+
+  font-size: 0.95rem;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.skill:hover {
+  background-color: #212529;
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
 @media (max-width: 991px) {
   .cv-navbar .nav-link {
     margin-right: 0;
@@ -119,5 +188,34 @@ body {
     display: inline-block;
     margin-top: 12px;
     margin-bottom: 8px;
+  }
+
+  .sobre-mi-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .bloque-habilidades {
+    width: 100%;
+    min-width: 0;
+    padding: 15px;
+  }
+
+  .texto-sobre-mi {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .seccion-lapiz-chico {
+    width: 100%;
+
+    border-width: 12px;
+
+    padding: 22px 18px;
+  }
+
+  .bloque-habilidades,
+  .texto {
+    overflow-wrap: break-word;
   }
 }
