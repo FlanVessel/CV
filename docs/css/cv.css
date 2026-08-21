@@ -150,6 +150,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+
+  justify-content: center;
 }
 
 .skill {
@@ -176,6 +178,10 @@ body {
   color: #ffffff;
 
   transform: translateY(-2px);
+}
+
+.text-center {
+  text-align: center;
 }
 
 @media (max-width: 991px) {
