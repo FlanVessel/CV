@@ -184,6 +184,127 @@ body {
   text-align: center;
 }
 
+/*Empieza Proyecto*/
+
+.lista-proyectos {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.proyecto-card {
+  width: 100%;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.proyecto-card:hover {
+  transform: translateY(-6px);
+}
+
+.proyecto-media {
+  margin-bottom: 25px;
+}
+
+.proyecto-imagen {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+
+  display: block;
+}
+
+.proyecto-contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.proyecto-cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.proyecto-cabecera h3 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.proyecto-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.proyecto-tags span {
+  border: 2px solid #212529;
+  border-radius: 20px;
+
+  padding: 6px 14px;
+
+  font-size: 0.9rem;
+}
+
+.proyecto-descripcion {
+  max-width: 700px;
+  margin: 0;
+
+  line-height: 1.6;
+  padding: 10px;
+}
+
+.proyecto-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 10px;
+}
+
+.proyecto-btn {
+  display: inline-block;
+
+  padding: 10px 20px;
+
+  border: 2px solid #212529;
+  border-radius: 24px;
+
+  background-color: transparent;
+  color: #212529;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.proyecto-btn:hover {
+  background-color: #212529;
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+.proyecto-btn-destacado {
+  background-color: #212529;
+  color: #ffffff;
+}
+
+.proyecto-btn-destacado:hover {
+  background-color: transparent;
+  color: #212529;
+}
+
+/*Termina Aqui Proyecto*/
+
 @media (max-width: 991px) {
   .cv-navbar .nav-link {
     margin-right: 0;
@@ -223,5 +344,16 @@ body {
   .bloque-habilidades,
   .texto {
     overflow-wrap: break-word;
+  }
+
+  .seccion-lapiz {
+    width: 96%;
+    border-width: 16px;
+    padding: 22px 16px;
+    margin: 35px auto;
+  }
+
+  .proyecto-contenido {
+    grid-template-columns: 1fr;
   }
 }
