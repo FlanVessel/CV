@@ -14,6 +14,10 @@ body {
 .cv-navbar {
   background-color: #000000;
   padding: 14px 0;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 
@@ -63,6 +67,7 @@ body {
 
 
 .seccion-cv {
+  scroll-margin-top: 100px;
   padding: 80px 0;
   border-bottom: 1px solid #dddddd;
 }
@@ -132,7 +137,7 @@ body {
   line-height: 1.7;
 }
 
-.sobre-mi-grid {
+.habilidades-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
@@ -317,7 +322,7 @@ body {
     margin-bottom: 8px;
   }
 
-  .sobre-mi-grid {
+  .habilidades-grid {
     grid-template-columns: 1fr;
     gap: 25px;
   }
